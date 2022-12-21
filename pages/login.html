@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/logo3.png">
+  <link rel="stylesheet" href="../style.css">
+  <title>MySite-login</title>
+</head>
+
+<body>
+  <header class="bg-pink-600 text-black body-font font-bold rounded-b-md">
+    <div
+      class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center rounded-md drop-shadow-xl shadow-xl">
+      <nav class=" ml-2 flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a href="home.html" class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Home</a>
+        <a href="about.html" class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">About</a>
+        <a href="content.html" class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Content</a>
+        <a href="contactme.html" class="hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Contact me</a>
+      </nav>
+      <a href="/index.html"
+        class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">
+        <img src="/img/logo3.png" alt="Logo" class="h-8 hover:rotate-[360deg] transition duration-1000" />
+        <span class="ml-3 text-xl">MySite</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0 justify-end mt-2">
+        <button
+        
+            class="inline-flex items-center  hover:bg-green-500 hover:text-white bg-gray-100 border-0 py-1 px-3  rounded text-base mt-4 md:mt-0 mr-4 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110"
+           >
+            Login
+           </button>
+       
+
+          <a href="signup.html">
+           <button
+            class="inline-flex items-center  hover:bg-green-500 hover:text-white bg-gray-100 border-0 py-1 px-3  rounded text-base mt-4 md:mt-0 mr-2 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110"
+           >
+            Sign up
+           </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- <div class="h-[77vh]"></div>   -->
+    <!-- component -->
+    <!-- This is an example component -->
+    <div class="font-sans">
+      <div class="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-100 ">
+        <div class="relative sm:max-w-sm w-full">
+          <div class="card bg-blue-400 shadow-lg  w-full h-full rounded-3xl absolute  transform -rotate-6"></div>
+          <div class="card bg-red-400 shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-6"></div>
+          <div class="relative w-full rounded-2xl  px-6 py-4 bg-gray-100 shadow-md">
+            <label for="" class="block mt-3 text-sm text-gray-700 text-center font-bold">
+              Login
+            </label>
+            <form method="#" action="#" class="mt-10">
+
+              <div>
+                <input type="email" placeholder=" E-Mail"
+                  class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+              </div>
+
+              <div class="mt-7">
+                <input type="password" placeholder=" Password"
+                  class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+              </div>
+
+              <div class="mt-7 flex">
+                <label for="remember_me" class="inline-flex items-center w-full cursor-pointer">
+                  <input id="remember_me" type="checkbox"
+                    class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    name="remember">
+                  <span class="ml-2 text-sm text-gray-600">
+                    Remember
+                  </span>
+                </label>
+
+                <div class="w-full text-right">
+                  <a class="underline text-sm text-gray-600 hover:text-gray-900" href="/pages/forgotPassword.html">
+                   Forgot Password ?
+                  </a>
+                </div>
+              </div>
+
+              <div class="mt-7">
+                <button
+                  class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner hover:bg-pink-700 focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                  Login
+                </button>
+              </div>
+
+              <div class="flex mt-7 items-center text-center">
+                <hr class="border-gray-300 border-1 w-full rounded-md">
+                <label class="block font-medium text-sm text-gray-600 w-full">
+                  OR
+                </label>
+                <hr class="border-gray-300 border-1 w-full rounded-md">
+              </div>
+
+              <div class="flex mt-7 justify-center w-full">
+                <button
+                  class="mr-5 bg-blue-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+
+                  Facebook
+                </button>
+
+                <button
+                  class="bg-red-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+
+                  Google
+                </button>
+              </div>
+
+              <div class="mt-7">
+                <div class="flex justify-center items-center">
+                  <label class="mr-2">Not Registered ? </label>
+                  <a href="signup.html"
+                    class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                    Create Account
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-gray-600 body-font ">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a href="home.html"
+        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+
+        <img class="h-10 mt-2 hover:rotate-180 " src="/img/logo3.png" alt=""/>
+        <span class=" ml-3 text-xl">My-Site</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022
+        My-Site —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@Rakib RsM</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

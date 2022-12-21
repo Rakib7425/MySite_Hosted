@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/content.js"></script>
+  <link rel="icon" type="image/x-icon" href="/img/logo3.png">
+  <link rel="stylesheet" href="/style.css">
+  <title>MySite-Home</title>
+</head>
+
+<body>
+  <header class="bg-pink-600 text-black body-font font-bold rounded-b-md">
+    <div
+      class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center rounded-md drop-shadow-xl shadow-xl">
+      <nav class=" ml-2 flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a href="home.html"
+          class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Home</a>
+        <a href="about.html"
+          class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">About</a>
+        <a href="content.html"
+          class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Content</a>
+        <a href="contactme.html"
+          class="hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Contact
+          me</a>
+        <!-- <a href="pages/Send Message.html"
+          class="hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Contact
+          me</a> -->
+      </nav>
+      <a href="/index.html"
+        class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">
+        <img src="/img/logo3.png" alt="Logo" class="h-8 hover:rotate-[360deg] transition duration-1000" />
+        <span class="ml-3 text-xl">MySite</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0 justify-end mt-2">
+        <a href="login.html">
+          <button
+            class="inline-flex items-center  hover:bg-green-500 hover:text-white bg-gray-100 border-0 py-1 px-3  rounded text-base mt-4 md:mt-0 mr-4 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">
+            Login
+          </button>
+        </a>
+
+        <a href="signup.html">
+          <button
+            class="inline-flex items-center  hover:bg-green-500 hover:text-white bg-gray-100 border-0 py-1 px-3  rounded text-base mt-4 md:mt-0 mr-2 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">
+            Sign up
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-gray-500">
+    <main class="bg-green-400 h-[100vh] w-[100vw">
+
+      <div class=" font-bold flex justify-center md:text-2xl ">
+        <h1 class=" m-[20px] md:mt-20 mt-3">Send WhatsApp Message Without save phone number...</h1>
+      </div>
+      <div class="md:mt-20 ">
+        <div class="mb-4 md:flex md:justify-center ml-3 mr-3">
+          <div class="mb-4 md:mr-2 md:mb-0 ">
+
+            <label class="block mb-2 text-sm font-bold text-gray-700" for="firstName" aria-required="true">
+              Country Code
+            </label>
+            <input
+              class="w-14 md:w-[4vw] px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline md:ml-4 placeholder:italic placeholder:text-slate-400 border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-indigo-200  outline-none transition-colors duration-200 ease-in-out"
+              id="countryCode" name="number" type="number" placeholder="91" maxlength="2"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+          </div>
+          <div class="md:ml-2">
+            <label class=" md:ml-[40px] block mb-2 text-sm font-bold text-gray-700" for="phoneNumber ">
+              Phone Number
+            </label>
+            <input
+              class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline placeholder:italic placeholder:text-slate-400  border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-indigo-200  outline-none transition-colors duration-200 ease-in-out"
+              id="phoneNumber" name="phoneNumber" required placeholder="1234567890" maxlength="12"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" />
+          </div>
+
+        </div>
+        <div class="relative md:flex justify-center items-center md:mr-20 ">
+          <label for="message"
+            class=" align-top mr-4 mb-[6rem] p-3 leading-6 text-sm text-gray-600 font-bold">Message</label>
+          <textarea placeholder="Write Your Message....." id="message" name="message "
+            class="  placeholder:italic placeholder:text-slate-400 md:w-[40vw]  rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3  leading-7 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+      </div>
+      <a target="_blank">
+        <div class="p-2 w-full">
+
+          <button value="Send Massage" readonly="readonly" type="submit" id="sendButton" name="sendButton"
+            onclick="whatsApp()"
+            class=" md:mt-4 active:bg-black flex mx-auto hover:text-white bg-pink-600 border-0 py-2 px-5 focus:outline-none hover:bg-green-500 text-black rounded text-lg hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Send
+            Message </button>
+
+
+        </div>
+
+      </a>
+
+    </main>
+  </section>
+
+  <footer class="text-gray-600 body-font ">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a href="home.html"
+        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 ">
+
+        <img src="/img/logo3.png" alt="" class="h-10 mt-2">
+        <span class=" ml-3 text-xl">My-Site</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022
+        My-Site —
+        <a href="https://twitter.com/" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@Rakib RsM</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

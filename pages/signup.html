@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/logo3.png">
+  <link rel="stylesheet" href="../style.css">
+  <title>MySite-Home</title>
+</head>
+
+<body class="body">
+  <header class="bg-pink-600 text-black body-font font-bold rounded-b-md">
+    <div
+      class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center rounded-md drop-shadow-xl shadow-xl">
+      <nav class=" ml-2 flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a href="home.html"
+          class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Home</a>
+        <a href="about.html"
+          class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">About</a>
+        <a href="content.html"
+          class="mr-5 hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Content</a>
+        <a href="contactme.html"
+          class="hover:text-green-900 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">Contact
+          me</a>
+      </nav>
+      <a href="/index.html"
+        class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">
+        <img src="/img/logo3.png" alt="Logo" class="h-8 hover:rotate-[360deg] transition duration-1000" />
+        <span class="ml-3 text-xl">MySite</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0 justify-end mt-2">
+        <a href="login.html">
+          <button
+            class="inline-flex items-center  hover:bg-green-500 hover:text-white bg-gray-100 border-0 py-1 px-3  rounded text-base mt-4 md:mt-0 mr-4 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">
+            Login
+          </button>
+        </a>
+        <button
+          class="inline-flex items-center  hover:bg-green-500 hover:text-white bg-gray-100 border-0 py-1 px-3  rounded text-base mt-4 md:mt-0 mr-2 hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-110">
+          Sign up
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="">
+      <!-- <img src="/img/SignUpPhoto.jpg" alt=""> -->
+      <!-- <div class="h-[77vh]"></div>   -->
+      <div class=" ml-[24vw]">
+        <!-- component -->
+        <!-- Container -->
+        <div class="container  mx-auto">
+          <div class="flex justify-center px-6 my-12 ">
+            <!-- <div class="invisible md:visible">
+          <img src="/img/SignUpPhoto.jpg" alt="" class="w-[85vw] mt-16 ">
+        </div> -->
+            <!-- Row -->
+            <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+
+              <!-- Col -->
+              <div>
+              </div>
+              <!-- Col -->
+              <div id="#" class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
+                <h3 class="pt-4 text-2xl text-center">Create an Account!</h3>
+                <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+                  <div class="mb-4 md:flex md:justify-between">
+                    <div class="mb-4 md:mr-2 md:mb-0">
+                      <label class="block mb-2 text-sm font-bold text-gray-700" for="firstName">
+                        First Name
+                      </label>
+                      <input
+                        class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                        id="firstName" type="text" placeholder="First Name" />
+                    </div>
+                    <div class="md:ml-2">
+                      <label class="block mb-2 text-sm font-bold text-gray-700" for="lastName">
+                        Last Name
+                      </label>
+                      <input
+                        class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                        id="lastName" type="text" placeholder="Last Name" />
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+                      Email
+                    </label>
+                    <input
+                      class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                      id="email" type="email" placeholder="Email" />
+                  </div>
+                  <div class="mb-4 md:flex md:justify-between">
+                    <div class="mb-4 md:mr-2 md:mb-0">
+                      <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                        Password
+                      </label>
+                      <input
+                        class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                        id="password" type="password" placeholder="Password" />
+                      <p class="text-xs italic text-red-500">Please choose a password.</p>
+                    </div>
+                    <div class="md:ml-2">
+                      <label class="block mb-2 text-sm font-bold text-gray-700" for="c_password">
+                        Confirm Password
+                      </label>
+                      <input
+                        class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                        id="c_password" type="password" placeholder="Confirm Password" />
+                    </div>
+                  </div>
+                  <div class="mb-6 text-center ">
+                    <button
+                      class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner hover:bg-pink-700 focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                      Create Account
+                    </button>
+
+
+                  </div>
+                  <hr class="mb-6 border-t" />
+                  <div class="text-center">
+                    <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                      href="/pages/forgotPassword.html">
+                      Forgot Password?
+                    </a>
+                  </div>
+                  <div class="text-center">
+                    <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800" href="login.html">
+                      Already have an account? Login!
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="text-gray-600 body-font ">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a href="home.html"
+        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+
+        <img class="h-10 mt-2" src="/img/logo3.png" alt="">
+        <span class=" ml-3 text-xl">My-Site</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022
+        My-Site —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@Rakib RsM</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
